@@ -48,8 +48,8 @@ GET http://HOST/mock/status/{statuscode}
 '''
 
 * This case HTTP 200 (OK) will be returned.
-'''
 
+'''
 GET http://HOST/mock/status/200
 
 '''
@@ -57,7 +57,6 @@ GET http://HOST/mock/status/200
 * Similarly to trigger an Internal Server Error, 500 can be passed.
 
 '''
-
 GET http://HOST/mock/status/500
 
 '''
