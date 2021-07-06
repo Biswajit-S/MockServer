@@ -24,6 +24,7 @@ GET http://HOST/user/{username}
 
 ### Update User
 ```
+
 PUT http://HOST/user
 
 {
@@ -48,13 +49,17 @@ GET http://HOST/mock/status/{statuscode}
 
 * This case HTTP 200 (OK) will be returned.
 '''
+
 GET http://HOST/mock/status/200
+
 '''
 
 * Similarly to trigger an Internal Server Error, 500 can be passed.
 
 '''
+
 GET http://HOST/mock/status/500
+
 '''
 
 ## Timeout Generator
@@ -62,12 +67,15 @@ GET http://HOST/mock/status/500
 * The API accepts a delay interval (seconds) as a path parameter and the API responds after the specified time.
 
 '''
+
 GET http://HOST/mock/timeout/{interval}
+
 '''
 
 ## URL Shortener
 * Generate a short URL for a specified URL.
 # Generate Short URL
+
 '''
 POST http://HOST/url
 
@@ -75,11 +83,13 @@ POST Body:
 {
     "url": "www.google.co.in"
 }
+
 '''
 
 # Get the Actual URL
 * When the shorter URL is accessed in the browser, the actual URL is called automatically.
 '''
+
 GET http://HOST/u/nZUmBLsN
 
 '''
